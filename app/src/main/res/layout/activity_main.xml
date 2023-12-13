@@ -12,16 +12,39 @@
         android:id="@+id/editTextTask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введите задачу"/>
+        android:hint="Введите задачу"
+        android:minHeight="48dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <DatePicker
+            android:id="@+id/datePickerTask"
+            android:layout_width="50sp"
+            android:layout_height="287dp"
+            android:layout_weight="1" />
+
+        <TimePicker
+            android:id="@+id/timePickerTask"
+            android:layout_width="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:timePickerMode="spinner" />
+    </LinearLayout>
+
     <Button
         android:id="@+id/btnAddTask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Добавить задачу"/>
+        android:minHeight="48dp"
+        android:text="Добавить задачу" />
     <ListView
         android:id="@+id/lvTasks"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="16dp"/>
-
 </LinearLayout>
