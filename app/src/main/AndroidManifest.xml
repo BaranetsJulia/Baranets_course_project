@@ -12,14 +12,18 @@
         android:theme="@style/Theme.Course_project"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".main.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Course_project">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.course_project.details.TaskDetailsActivity"
+            android:theme="@style/Theme.Course_project"/>
     </application>
 
 </manifest>
